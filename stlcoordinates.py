@@ -66,6 +66,7 @@ hull_indices = list(ch.vertices)
 
 print valores
 hull_indices.append(hull_indices[0])
+
 print "indices: " , hull_indices
 # These are the actual points.
 
@@ -83,11 +84,22 @@ plt.plot(valores[:, 0], valores[:, 1], 'ko', markersize=10)
 port = 'COM2'
 vserial0 = serial.Serial(port, baudrate=9600, bytesize=8, parity=serial.PARITY_NONE, stopbits=1)
 
-end=1
+
 #while end != "terminar":
 #    vserial0.write(chr(94))
 #    print chr(95)
 #    end=raw_input()
+
+end=1
+while end != "terminar":
+    end=raw_input()
+    vserial0.write(chr(94))
+    print chr(95)
+    
+
+
+
+
 
 
 
