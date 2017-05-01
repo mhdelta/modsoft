@@ -1,0 +1,16 @@
+solid 
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 107 89 
+      vertex -171 -75 
+      vertex 107 -75 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 107 89 
+      vertex -171 89 
+      vertex -171 -75 
+    endloop
+  endfacet
+endsolid 
