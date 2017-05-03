@@ -4,24 +4,22 @@ from scipy.spatial import ConvexHull
 import matplotlib.pyplot as plt
 import time
 import serial
+from progress.bar import Bar
 
-
-
-
-
-fil = open('1rectangulo-ascii.stl', 'r').read()
+fil = open('ascii-hexagono.stl', 'r').read()
 wordlist = fil.split()
 
 # ESTE ARCHIVO EXTRAE LAS COORDENADAS X,Y DE UN ARCHIVO .STL
 # SIN EMBARGO LA IMPRESORA NECESITA UN ORDEN PARA GRAFICAR LAS SUPERFICIES
-# POR LO QUE SE ESCRIBE LA PRIMERA COORDENADA DE CADA TRIANGULO, LUEGO LA 
-# SEGUNDA Y DESPUES LA TERCERA, SUCESIVAMENTE HASTA LOS N TRIANGULOS QUE 
-# FORMAN LA FIGURA.
+# POR LO QUE SE UTILIZA LA HERRAMIENTA CONVEXHULL PARA ORGANIZAR LOS
+# INDICES DE LOS VECTORES ALMACENANDO TODAS LAS COORDENADAS DE LOS TRIANGULOS
+# .
 
 x=0
 contador_facetas=0
 vertex=range(100)
 vertey=range(100)
+
 
 
 print "X","Y"
@@ -34,7 +32,6 @@ for i,j in enumerate(wordlist):	#hacer tuplas de palabras
     else: 
 		if j == "facet":              #Cuantos triangulos tiene 
 			contador_facetas += 1
-	
 
 	
 print "contador facetas= ", contador_facetas
@@ -64,10 +61,12 @@ ch = ConvexHull(valores)
 hull_indices = list(ch.vertices)
 
 
-print valores
+
 hull_indices.append(hull_indices[0])
 
 print "indices: " , hull_indices
+
+
 # These are the actual points.
 
 valores = np.array(valores)
@@ -79,25 +78,72 @@ plt.plot(valores[:, 0], valores[:, 1], 'ko', markersize=10)
 #plt.show()
 
 
+bar = Bar('Processing', max=len(hull_indices), suffix='%(percent)d%%')
+#for i in hull_indices:
+#    time.sleep(0.4)
+#    bar.next()
+#bar.finish()
+print "\n\n"
+print "[X  Y]"
+for i in hull_indices:
+    print valores[i]
+                                         
 
-#   COMUNICACION SERIAL
-port = 'COM2'
-vserial0 = serial.Serial(port, baudrate=9600, bytesize=8, parity=serial.PARITY_NONE, stopbits=1)
+######################   PENDIENTE DE UNA LINEA DADA POR DOS PUNTOS ################
+
+def slope(x1, y1, x2, y2):
+    return float((y2-y1)/float(x2-x1))
+
+pendientes = []
 
 
-#while end != "terminar":
-#    vserial0.write(chr(94))
-#    print chr(95)
-#    end=raw_input()
 
-end=1
-while end != "terminar":
-    end=raw_input()
-    vserial0.write(chr(94))
-    print chr(95)
+for i in range(0,len(hull_indices)-1):
+     print 'datos>','(',intvertex[hull_indices[i]],',',intvertey[hull_indices[i]],')','(',intvertex[hull_indices[i+1]],',',intvertey[hull_indices[i+1]],')','indice>',i,'mas `',i+1
+     print slope(intvertex[hull_indices[i]],intvertey[hull_indices[i]],intvertex[hull_indices[i+1]],intvertey[hull_indices[i+1]]),"wait"
+     pendientes.append (slope(intvertex[hull_indices[i]],intvertey[hull_indices[i]],intvertex[hull_indices[i+1]],intvertey[hull_indices[i+1]]))
+plt.show()    
+
+
+###########             ENVIO DE DATOS SERIAL               ####################
+
+#5 DATOS PARA MANDAR:
+
+# SE ENVIA UN "BYTE" POR CADA DOS COORDENADAS
+
+#DIRX -,+    		1 BIT   0 -> -    1 -> +
+#DIRY -,+		1 BIT   0 -> -    1 -> +
+#PASOS++ DE Y	(2-6)   2 BIT
+#PASOSX			6 BIT
+#PASOSY POR CADAX	6 BIT
+
+
+reset = []    
+def BYTE(indice, pendiente): # CON ESTOS DOS DATOS PUEDO ENCONTRAR LOS 16 BITS PARA ENVIAR  
+    for i in range (15):
+        reset.append (0)
+        
+    byte = bytearray(reset)# ojo enviarle a esta funcion hull indices
+
+    if (intvertex[hull_indices[indice]]-intvertex[hull_indices[indice + 1]] < 0):
+        byte[0] = 1
+
     
 
 
+    
+BYTE (0,0)
+    
+    
+
+
+
+#######################  COMUNICACION SERIAL   #################################
+
+port = 'COM2'
+vserial0 = serial.Serial(port, baudrate=9600, bytesize=8, parity=serial.PARITY_NONE, stopbits=1)
+
+vserial0.write("cls")  
 
 
 

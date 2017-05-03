@@ -1,0 +1,30 @@
+solid 
+  facet normal 0.000000E+00 0.000000E+00 -1.000000E+00
+    outer loop
+      vertex -111 0 
+      vertex 55 -96 
+      vertex -55 -96 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 -1.000000E+00
+    outer loop
+      vertex -111 0 
+      vertex 111 0 
+      vertex 55 -96 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 -1.000000E+00
+    outer loop
+      vertex -55 96 
+      vertex 55 96 
+      vertex 111 0 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 -1.000000E+00
+    outer loop
+      vertex -55 96 
+      vertex 111 0 
+      vertex -111 0 
+    endloop
+  endfacet
+endsolid 
