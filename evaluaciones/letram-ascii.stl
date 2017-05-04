@@ -1,0 +1,352 @@
+solid 
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 639 769 
+      vertex 701 946 
+      vertex 536 975 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1614 0 
+      vertex 1747 0 
+      vertex 1738 220 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 701 946 
+      vertex 660 1027 
+      vertex 536 975 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 536 975 
+      vertex 660 1027 
+      vertex 618 1106 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1728 435 
+      vertex 1710 767 
+      vertex 1581 662 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 349 662 
+      vertex 361 867 
+      vertex 225 767 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 214 561 
+      vertex 349 662 
+      vertex 225 767 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1581 662 
+      vertex 1710 767 
+      vertex 1567 867 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1567 867 
+      vertex 1710 767 
+      vertex 1695 1009 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 618 1106 
+      vertex 552 1230 
+      vertex 448 1144 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 536 975 
+      vertex 618 1106 
+      vertex 448 1144 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 361 867 
+      vertex 376 1062 
+      vertex 240 1009 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 225 767 
+      vertex 361 867 
+      vertex 240 1009 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1096 364 
+      vertex 1188 555 
+      vertex 968 401 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1034 222 
+      vertex 1096 364 
+      vertex 968 401 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 901 222 
+      vertex 1034 222 
+      vertex 968 401 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 552 1230 
+      vertex 511 1303 
+      vertex 392 1247 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 448 1144 
+      vertex 552 1230 
+      vertex 392 1247 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1567 867 
+      vertex 1695 1009 
+      vertex 1551 1062 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 392 1247 
+      vertex 511 1303 
+      vertex 471 1371 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 901 222 
+      vertex 968 401 
+      vertex 837 364 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 376 1062 
+      vertex 392 1247 
+      vertex 258 1243 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 240 1009 
+      vertex 376 1062 
+      vertex 258 1243 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1188 555 
+      vertex 1291 769 
+      vertex 1090 657 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 968 401 
+      vertex 1188 555 
+      vertex 1090 657 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 392 1247 
+      vertex 471 1371 
+      vertex 411 1470 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 258 1243 
+      vertex 392 1247 
+      vertex 277 1470 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 392 1247 
+      vertex 411 1470 
+      vertex 277 1470 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1695 1009 
+      vertex 1678 1243 
+      vertex 1542 1156 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 203 349 
+      vertex 321 0 
+      vertex 349 662 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1738 220 
+      vertex 1581 662 
+      vertex 1614 0 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1551 1062 
+      vertex 1695 1009 
+      vertex 1542 1156 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1728 435 
+      vertex 1581 662 
+      vertex 1738 220 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1291 769 
+      vertex 1391 975 
+      vertex 1234 946 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1090 657 
+      vertex 1291 769 
+      vertex 1234 946 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1542 1156 
+      vertex 1678 1243 
+      vertex 1532 1247 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 837 364 
+      vertex 968 401 
+      vertex 744 555 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1532 1247 
+      vertex 1678 1243 
+      vertex 1658 1470 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 744 555 
+      vertex 968 401 
+      vertex 845 657 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1477 1144 
+      vertex 1532 1247 
+      vertex 1383 1230 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1391 975 
+      vertex 1477 1144 
+      vertex 1383 1230 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1234 946 
+      vertex 1391 975 
+      vertex 1383 1230 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1383 1230 
+      vertex 1532 1247 
+      vertex 1448 1345 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1532 1247 
+      vertex 1658 1470 
+      vertex 1487 1410 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1448 1345 
+      vertex 1532 1247 
+      vertex 1487 1410 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 1487 1410 
+      vertex 1658 1470 
+      vertex 1525 1470 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 -0.000000E+00 1.000000E+00
+    outer loop
+      vertex 744 555 
+      vertex 845 657 
+      vertex 639 769 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 188 0 
+      vertex 321 0 
+      vertex 203 349 
+    endloop
+  endfacet
+  facet normal -0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 639 769 
+      vertex 845 657 
+      vertex 701 946 
+    endloop
+  endfacet
+  facet normal 0.000000E+00 0.000000E+00 1.000000E+00
+    outer loop
+      vertex 203 349 
+      vertex 349 662 
+      vertex 214 561 
+    endloop
+  endfacet
+endsolid 

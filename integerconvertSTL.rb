@@ -111,9 +111,9 @@ begin
 
       outFile.write("  facet normal #{normal[0].to_sn} #{normal[1].to_sn} #{normal[2].to_sn}\n")
       outFile.write("    outer loop\n")
-      outFile.write("      vertex #{Integer(vertexA[0]*100)} #{Integer(vertexA[1]*100)} \n")
-      outFile.write("      vertex #{Integer(vertexB[0]*100)} #{Integer(vertexB[1]*100)} \n")
-      outFile.write("      vertex #{Integer(vertexC[0]*100)} #{Integer(vertexC[1]*100)} \n")
+      outFile.write("      vertex #{Integer(vertexA[0]*10)} #{Integer(vertexA[1]*10)} \n")
+      outFile.write("      vertex #{Integer(vertexB[0]*10)} #{Integer(vertexB[1]*10)} \n")
+      outFile.write("      vertex #{Integer(vertexC[0]*10)} #{Integer(vertexC[1]*10)} \n")
       outFile.write("    endloop\n")
       outFile.write("  endfacet\n")
     end
