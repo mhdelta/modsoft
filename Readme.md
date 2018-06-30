@@ -1,4 +1,4 @@
-# Software modulation fo sendind serial data using RS232 protocol.
+# Software modulation for sendind serial data using RS232 protocol.
 
 Python implementation for transfor stl maps to 3 representative bytes and send them using RS232 protocol.
 
